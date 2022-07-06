@@ -1,0 +1,27 @@
+{
+    "name": "cstudios/craft-smtpmailer",
+    "description": "A contact form plugin to send out emails in various ways",
+    "type": "craft-plugin",
+    "keywords": ["contact", "form", "email", "templates", "smtp", "mailer"],
+    "license": "MIT",
+    "support": {
+        "email": "erik@cstudios.sk",
+        "issues": "https://github.com/cstudiossro/craft-smtpmailer/issues?state=open",
+        "source": "https://github.com/cstudiossro/craft-smtpmailer",
+        "docs": "https://github.com/cstudiossro/craft-smtpmailer/blob/master/README.md"
+    },
+    "require": {
+        "craftcms/cms": "^4.0.0-alpha",
+        "phpmailer/phpmailer": "^6.4",
+        "google/recaptcha": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "cstudios\\smtpmailer\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "SMTP Mailer",
+        "handle": "smtpmailer"
+    }
+}
