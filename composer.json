@@ -22,6 +22,10 @@
     },
     "extra": {
         "name": "SMTP Mailer",
-        "handle": "smtpmailer"
+        "handle": "smtpmailer",
+        "developer": "cstudios",
+        "developerUrl": "https://cstudios.sk/",
+        "documentationUrl": "https://github.com/cstudiossro/craft-smtpmailer#readme",
+        "class": "cstudios\\smtpmailer\\Plugin"
     }
 }
