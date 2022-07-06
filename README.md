@@ -29,7 +29,7 @@ Notice the underscore > `_`
 `templates/_mails`
 
 Create a `email_template_config.php` file inside your config folder > `config/email_template_config.php`
-and copy the contents of this [file](https://raw.githubusercontent.com/cstudiossro/smtpmailer/main/email_template_config.php)
+and copy the contents of this [file](https://raw.githubusercontent.com/cstudiossro/craft-smtpmailer/main/email_template_config.php)
 into that
 
 ## How do these templates work?
