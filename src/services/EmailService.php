@@ -167,7 +167,11 @@ class EmailService extends Component
                         call_user_func_array([$this, $key], $value);
                     }
                 } else {
-                    $this->_mail->$key($value);
+                    if (method_exists($this->_mail, $key)) {
+                        $this->_mail->$key($value);
+                    } else if (method_exists($this, $key) && in_array($key,$this->configMethods())) {
+                        $this->$key($value);
+                    }
                 }
             });
         }
@@ -188,7 +192,7 @@ class EmailService extends Component
 
     public function setBodyFromTemplate($template, $variables)
     {
-        $this->_mail->Body = Craft::$app->view->renderTemplate('/_mails/', $template, $variables);
+        $this->_mail->Body = Craft::$app->view->renderTemplate('/_mails/'. $template, $variables);
         $this->_mail->isHTML(true);
         return $this;
     }
