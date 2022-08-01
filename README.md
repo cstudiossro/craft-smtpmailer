@@ -74,6 +74,17 @@ Now this file is important. Here you actually refer to the functions specified i
 You use keys to refer to the methods, and values to fill out the data.
 I left an example in this repo: https://raw.githubusercontent.com/cstudiossro/smtpmailer/main/email_template_config.php
 
+## How to change the subject
+Put these line into your `email_template_config.php` file
+
+```php
+    'test_template' => [
+        //...
+        'Subject' => 'Test Subject',
+        //...
+    ],
+```
+
 ## How to use google recaptcha?
 Add this line to the .env file (you will need the recaptcha secret):
 ```dotenv
